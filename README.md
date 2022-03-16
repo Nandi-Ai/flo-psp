@@ -25,7 +25,7 @@ Those will be the roles we will create to apply the rules we state
 Those will be the bindings to the "subject" that we state, that the roles will be applied to
 
 To apply each directory of YAMLs, run the following commands:  
-`kubectl apply -d ./PodSecurityPolicies`  
-`kubectl apply -d ./ClusterRoles`  
-`kubectl apply -d ./RoleBindings`  
-`kubectl apply -d ./ClusterRoleBindings`  
+`kubectl apply -k ./PodSecurityPolicies`  
+`kubectl apply -k ./ClusterRoles`  
+`kubectl apply -k ./RoleBindings`  
+`kubectl apply -k ./ClusterRoleBindings`  
