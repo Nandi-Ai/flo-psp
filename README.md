@@ -15,4 +15,17 @@ Using service accounts is needed, so the following flag can be added to kubernet
 After preparations was done,the configurations can be applied in the cluster  
 We apply objects from those kinds, in the following order:  
 
-#### PodSecurityPolicies directory
+#### 1. PodSecurityPolicies directory
+Those are the PSPs that will be referenced from the ClusterRoles that we will apply
+
+#### 2. ClusterRoles directory
+Those will be the roles we will create to apply the rules we state
+
+#### 3. RoleBindings and ClusterRoleBindings directories
+Those will be the bindings to the "subject" that we state, that the roles will be applied to
+
+To apply each directory of YAMLs, run the following commands:  
+`kubectl apply -d ./PodSecurityPolicies`  
+`kubectl apply -d ./ClusterRoles`  
+`kubectl apply -d ./RoleBindings`  
+`kubectl apply -d ./ClusterRoleBindings`  
