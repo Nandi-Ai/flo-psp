@@ -29,3 +29,8 @@ To apply each directory of YAMLs, run the following commands:
 `kubectl apply -k ./ClusterRoles`  
 `kubectl apply -k ./RoleBindings`  
 `kubectl apply -k ./ClusterRoleBindings`  
+
+# Links for further reading
+
+To sum things up, more information about pod security policies can be found here:  
+https://octetz.com/docs/2018/2018-12-07-psp/
